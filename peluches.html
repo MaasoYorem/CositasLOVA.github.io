@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes ejemplo{
+            from{background-color: beige;}to{background-color: bisque;}
+        }
+        body{
+            animation-name: ejemplo; animation-duration: 5s; animation-iteration-count: infinite;
+        }
+    </style>
+    <style>
+        #img{
+            display: none;
+        }
+    </style>
+    <button id="boton" onclick="mostrar();">Peluche</button>
+    <h1 id="boton" onclick="mostrar();">Peluche tejido</h1><div id="img">
+        <button id="boton" onclick="ocultar();">Ocultar Imagen</button>
+        <br>
+        <img src="C:\Users\DELL\Documents\Valenzuela\5d29b4fa-ff73-4d66-91d2-78b44230b63c.jfif" width="400px" alt="">
+    </div>
+    <script>
+        function mostrar(){
+            document.getElementById('img').style.display='block';}
+        function ocultar(){
+            document.getElementById('img').style.display='none';
+        }
+        
+    </script>
+</head>
+<body>
+    <a href="cositas.html">Volver al inicio</a>
+    <p>Los peluches que ofrecemos pueden ser algun animalito <br>
+    o incluso inspirados en una persona, un personaje de caricatura <br>
+entre otros.</p>
+</body>
+</html>

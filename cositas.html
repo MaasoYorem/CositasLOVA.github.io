@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cositas LOVA</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        }
+        body{
+            background-image: url("https://i.pinimg.com/736x/97/5f/7e/975f7ef6eeefe2d54333d33d26d6d9da.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .titulo{
+            padding: 20px 20px 20px 25px;
+            margin-top: 20px;
+            background-color: #d60578b5;
+            color: #d3a7c1;
+        }
+        nav{
+            max-width: 900px;
+            margin: auto;
+            background-color: #d33290;
+            font-size: 20px;
+            margin-top: 50px;
+        }
+        .menu-horizontal{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+        .menu-horizontal li a{
+            display: block;
+            padding: 15px 20px;
+            color: #f89fd3;
+            text-decoration: none;
+        }
+        .menu-horizontal li:hover{
+            background-color: #ec3ba3;
+        }
+        .menu-vertical{
+            position: absolute;
+            display: none;
+            list-style: none;
+            width: 200px;
+            background-color: rgb(236, 59, 163);
+        }
+        .menu-horizontal li:hover .menu-vertical{
+            display: block;
+        }
+        .menu-vertical li:hover{
+            background-color: rgb(252, 86, 182);
+        }
+        .menu-vertical li a{
+            display: block;
+            color: rgb(248, 185, 222);
+            padding: 15px 15px 15px 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="titulo">
+        <p style="color:#d3a7c1"><marquee behavior="" direction="left">Lopez Valenzuela Aidil Magali COSITAS LOVA</marquee></p>
+        <h2 style="display: inline-block; margin-right: 120px;">COSITAS LOVA</h2>
+        <h4 align="right" style="display: inline-block;">Un poquito de todo</h4>
+    </div>
+        <nav>
+            <ul class="menu-horizontal">
+                <li><a href="pagPrin.html">Inicio</a></li>
+                <li>
+                    <a href="#">Acerca de</a>
+                <ul class="menu-vertical">
+                    <li><a href="acerca.html">Que es</a></li>
+                    <li><a href="acerca.html">De donde es</a></li>
+                </ul>
+                </li>
+                <li>
+                    <a href="#">Servicios</a>
+                <ul class="menu-vertical">
+                    <li><a href="frame.html">Peluches</a></li>
+                    <li><a href="frame.html">Llaveros</a></li>
+                    <li><a href="frame.html">Pulseras</a></li>
+                </ul>    
+                </li>
+                <li><a href="Contactanos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    <br><br><br>
+</body>
+</html>

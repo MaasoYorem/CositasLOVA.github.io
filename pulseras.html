@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes ejemplo{
+            from{background-color: beige;}to{background-color: bisque;}
+        }
+        body{
+            animation-name: ejemplo; animation-duration: 5s; animation-iteration-count: infinite;
+        }
+        #masked-image{
+        object-fit: cover;
+       }
+    </style>
+    <style>
+        #img{
+            display: none;
+        }
+    </style>
+    <button id="boton" onclick="mostrar();">Pulsera</button>
+    <h1 id="boton" onclick="mostrar();">Pulsera tejido</h1><div id="img">
+        <button id="boton" onclick="ocultar();">Ocultar Imagen</button>
+        <br>
+        <img src="C:\Users\DELL\Documents\Valenzuela\b7afe8d9-6251-450c-972a-0aaef221e9e3.jfif" width="400px" alt="">
+    </div>
+    <script>
+        function mostrar(){
+            document.getElementById('img').style.display='block';}
+        function ocultar(){
+            document.getElementById('img').style.display='none';
+        }
+        
+    </script>
+</head>
+<body>
+    <a href="cositas.html">Volver al inicio</a>
+    <a href="https://monyur.com/origen-del-uso-de-las-pulseras/#:~:text=Los%20griegos%20popularizaron%20el%20uso,de%20las%20pulseras%20y%20brazaletes."><img class="masked-image" src="C:\Users\DELL\Documents\Valenzuela\8bb2e238-51ee-4500-9586-62ed90e0beec.jfif" width="400px" alt="Imagen" style="clip-path: url(#square-mask);">
+
+        <svg width="0" height="0" style="position: absolute;">
+            <defs>
+                <clipPath id="triangle-mask">
+                    <polygon points="100, 20 20, 180 180, 180" />
+                </clipPath>
+            </defs>
+        </svg>
+</body>
+</html>

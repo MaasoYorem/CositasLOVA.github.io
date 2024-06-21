@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes ejemplo{
+            from{background-color: beige;}to{background-color: bisque;}
+        }
+        body{
+            animation-name: ejemplo; animation-duration: 5s; animation-iteration-count: infinite;
+            display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 100vh;
+          margin: 0;
+          font-family: Arial, sans-serif;
+          background-color: #f0f0f0;
+        }
+        .container {
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 10px;
+        }
+        .box {
+          width: 100px;
+          height: 100px;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          background-color: #3498db;
+          color: white;
+          font-size: 18px;
+          cursor: pointer;
+          transition: background-color 0.3s ease;
+        }
+
+    </style>
+    <style>
+        #img{
+            display: none;
+        }
+    </style>
+    <button id="boton" onclick="mostrar();">Llavero</button>
+    <h1 id="boton" onclick="mostrar();">Llavero</h1><div id="img">
+        <button id="boton" onclick="ocultar();">Ocultar Imagen</button>
+        <br>
+        <img src="C:\Users\DELL\Documents\Valenzuela\529ef941-e1c9-4753-a31f-3c8de4837b07.jfif" width="400px" alt="">
+    </div>
+    <script>
+        function mostrar(){
+            document.getElementById('img').style.display='block';}
+        function ocultar(){
+            document.getElementById('img').style.display='none';
+        }
+        
+    </script>
+</head>
+<body>
+    <a href="cositas.html">Volver al inicio</a>
+    <p>Puede llevar llaveros de peluches tejidos o <br>
+    de plastico estilizados, tambien contamos con patrones <br>
+hrchos con hilo, el que usted escucha.</p>
+<img src="blob:https://web.whatsapp.com/a48cc705-2920-405e-9d28-4fe4e2428151" alt="">
+<img src="blob:https://web.whatsapp.com/529ef941-e1c9-4753-a31f-3c8de4837b07" alt="">
+<div class="container">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+    <div class="box">5</div>
+    <div class="box">6</div>
+    <div class="box">7</div>
+    <div class="box">8</div>
+    <div class="box">9</div>
+  </div>
+
+  <script>
+    function cambiarColor(event) {
+      const colores = ["#FF5733", "#33FF57", "#5733FF", "#FF3357", "#33FFC1", "#336CFF"];
+      const colorAleatorio = colores[Math.floor(Math.random() * colores.length)];
+      event.target.style.backgroundColor = colorAleatorio;
+    }
+
+    document.querySelectorAll('.box').forEach(box => {
+      box.addEventListener('click', cambiarColor);
+    });
+  </script>
+
+</body>
+</html>

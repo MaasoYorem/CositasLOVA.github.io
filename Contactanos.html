@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #display-area {
+        width: 300px;
+        height: 200px;
+        border: 1px solid #000;
+        margin-bottom: 10px;
+        overflow: auto;
+        }
+
+    </style>
+</head>
+<body bgcolor=#B2D0D2>
+    <a href="cositas.html">Volver al inicio</a>
+    <center>
+        <br><br><br><br>
+        <a href="https://www.google.com/?hl=es"><img src="https://i.pinimg.com/originals/57/61/5b/57615b8c0092a66c1d4058b1692955cc.gif" alt=""></a>
+        <p>Facebook: Cositas LOVA</p> <br>
+        <p>Instagram: CositasLOVA</p> <br>
+        <p>Whatsapp: 631-109-8529</p> <br>
+        <br><br><br><br><br>
+        <h2>Ultima actualizacion: 21/06/2024 a las 11:42 a.m, Nogales.Sonora</h2>
+        <br><br>
+        <div id="display-area"></div>
+        <button onclick="mostrarTexto()">Mostrar Texto</button>
+        <button onclick="limpiarDisplay()">Limpiar Display</button>
+        <script>
+        function mostrarTexto() {
+        var texto = prompt("texto a mostrar");
+        var displayArea = document.getElementById("display-area");
+        displayArea.innerHTML += "<p>" + texto + "</p>";
+        }
+        function limpiarDisplay() {
+        var displayArea = document.getElementById("display-area");
+        displayArea.innerHTML = "";
+        }
+        </script>
+
+    </center>
+</body>
+</html>
